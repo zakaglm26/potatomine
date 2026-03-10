@@ -1,0 +1,26 @@
+.venv/
+__pycache__/
+*.py[cod]
+
+.vscode/
+
+# Large datasets / media (keep repo lightweight)
+dataset/
+Potato/
+videos/*.mp4
+videos/*.avi
+
+# Archives
+*.zip
+*.7z
+*.rar
+
+# Training outputs (common YOLO/ML artifacts)
+runs/
+wandb/
+mlruns/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,8 @@
+# Core dependencies for webcam.py (YOLOv8 + OpenVINO + OpenCV overlay)
+ultralytics
+opencv-python
+cvzone
+openvino
+
+# Notebook support (optional but used in potato_yolo_colab.ipynb)
+notebook
