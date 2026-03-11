@@ -2,5 +2,17 @@ services:
   - type: web
     name: label-studio
     env: python
-    buildCommand: pip install -r requirements.txt
+    buildCommand: pip install -r requirements.labelstudio.txt
     startCommand: bash start.sh
+    disk:
+      name: label-studio-data
+      mountPath: /var/lib/label-studio
+      sizeGB: 10
+    envVars:
+      - key: LABEL_STUDIO_DATA_DIR
+        value: /var/lib/label-studio
+      # Optionnel: définis ces valeurs dans Render (Environment) pour créer un compte admin.
+      # - key: LABEL_STUDIO_USERNAME
+      #   value: admin
+      # - key: LABEL_STUDIO_PASSWORD
+      #   value: admin123

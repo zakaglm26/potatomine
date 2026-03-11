@@ -1,0 +1,2 @@
+# Minimal deps for deploying Label Studio on Render
+label-studio>=1.13
