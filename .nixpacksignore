@@ -1,0 +1,23 @@
+# Ignore local envs
+.venv/
+__pycache__/
+
+# Ignore large artifacts
+*.zip
+*.7z
+*.rar
+*.pt
+*.pth
+*.onnx
+*.engine
+
+# Ignore ML/dev folders not needed for Label Studio deploy
+Potato/
+dataset/
+videos/
+runs/
+wandb/
+mlruns/
+
+# VS Code
+.vscode/

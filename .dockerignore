@@ -1,0 +1,25 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+
+# Large artifacts
+*.zip
+*.7z
+*.rar
+*.pt
+*.pth
+*.onnx
+*.engine
+
+# ML/dev folders
+Potato/
+dataset/
+videos/
+runs/
+wandb/
+mlruns/
+
+# Git / editor
+.git/
+.vscode/
