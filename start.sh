@@ -24,4 +24,5 @@ label-studio start \
   --port "${PORT_VALUE}" \
   --data-dir "${DATA_DIR}" \
   --no-browser \
+  --init \
   "${EXTRA_ARGS[@]}"

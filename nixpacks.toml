@@ -1,0 +1,14 @@
+# Railway uses Nixpacks by default for Python repos.
+# This forces a *minimal* install for Label Studio so the build image stays small.
+
+[phases.install]
+cmds = [
+  "python -m pip install --upgrade pip",
+  "pip install -r requirements.labelstudio.txt"
+]
+
+[variables]
+NIXPACKS_PYTHON_VERSION = "3.10"
+
+[start]
+cmd = "bash start.sh"

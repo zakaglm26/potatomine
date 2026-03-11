@@ -4,6 +4,9 @@ __pycache__/
 
 .vscode/
 
+# Deta Space CLI (contains sensitive metadata/tokens)
+.space/
+
 # Large datasets / media (keep repo lightweight)
 dataset/
 Potato/
@@ -19,6 +22,12 @@ videos/*.avi
 runs/
 wandb/
 mlruns/
+
+# Model artifacts
+*.pt
+*.pth
+*.onnx
+*.engine
 
 # OS / editor
 .DS_Store
