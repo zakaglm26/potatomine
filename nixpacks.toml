@@ -9,6 +9,7 @@ cmds = [
 
 [variables]
 NIXPACKS_PYTHON_VERSION = "3.10"
+NIXPACKS_PYTHON_PACKAGE_MANAGER = "skip"
 
 [start]
 cmd = "bash start.sh"
