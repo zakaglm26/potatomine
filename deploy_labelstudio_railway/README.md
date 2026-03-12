@@ -16,3 +16,11 @@ Point Railway **Root Directory** to this folder: `deploy_labelstudio_railway`.
   - `LABEL_STUDIO_DATA_DIR` (e.g. `/app/.data`)
   - `LABEL_STUDIO_USERNAME`
   - `LABEL_STUDIO_PASSWORD`
+
+## If login shows "Forbidden (403) CSRF verification failed"
+On Railway, the public URL is HTTPS but the app receives HTTP inside the container.
+`start.sh` auto-configures `CSRF_TRUSTED_ORIGINS` using `RAILWAY_PUBLIC_DOMAIN`.
+
+If you use a custom domain, set one of:
+- `LABEL_STUDIO_HOST` = `https://your-domain.example`
+- or `CSRF_TRUSTED_ORIGINS` = `https://your-domain.example`
